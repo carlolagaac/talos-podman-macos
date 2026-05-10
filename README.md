@@ -15,10 +15,10 @@ brew install talosctl kubectl podman
 ./01-configure-podman.sh
 
 # 2. Create cluster
-./02-create-talos-cluster.sh create
+./02-talos-cluster.sh create
 
 # 3. Destroy cluster
-./02-create-talos-cluster.sh destroy
+./02-talos-cluster.sh destroy
 ```
 
 ## Scripts
@@ -26,7 +26,7 @@ brew install talosctl kubectl podman
 | Script | Purpose |
 |--------|---------|
 | `01-configure-podman.sh` | Initializes a rootful Podman machine (4 CPUs, 6 GB RAM) and loads `br_netfilter` |
-| `02-create-talos-cluster.sh` | Creates or destroys a Talos cluster, fixes kubeconfig server URL automatically |
+| `02-talos-cluster.sh` | Creates or destroys a Talos cluster, fixes kubeconfig server URL automatically |
 
 ## Configuration
 
